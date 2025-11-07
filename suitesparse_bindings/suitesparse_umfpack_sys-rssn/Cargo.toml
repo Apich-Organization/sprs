@@ -1,5 +1,5 @@
 [package]
-name = "suitesparse_umfpack_sys"
+name = "suitesparse_umfpack_sys-rssn"
 version = "0.1.0"
 authors = ["James Logan <jlogan03@gmail.com>"]
 description = "Raw bindings to SuiteSparse's UMFPACK collection"

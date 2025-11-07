@@ -1,5 +1,5 @@
 [package]
-name = "sprs-tests"
+name = "sprs-tests-rssn"
 version = "0.1.0"
 authors = ["Magnus Ulimoen <magnus@ulimoen.dev>"]
 publish = false
@@ -8,5 +8,5 @@ edition.workspace = true
 license.workspace = true
 
 [dev-dependencies]
-sprs = { path = "../sprs", features = ["serde"], default-features = false }
+sprs-rssn = { path = "../sprs-rssn", features = ["serde"], default-features = false }
 serde_json = "1.0.58"

@@ -1,5 +1,5 @@
 [package]
-name = "sprs_suitesparse_ldl"
+name = "sprs_suitesparse_ldl-rssn"
 description = "sprs bindings to the suitesparse ldl solver"
 version = "0.8.0"
 authors = ["Vincent Barrielle <vincent.barrielle@m4x.org>"]
@@ -12,5 +12,5 @@ license.workspace = true
 
 [dependencies]
 num-traits = "0.2.0"
-suitesparse_ldl_sys = { version = "0.3.0", path = "../suitesparse_ldl_sys" }
-sprs = { version = "0.11.0", path = "../../sprs" }
+suitesparse_ldl_sys-rssn = { version = "0.3.0", path = "../suitesparse_ldl_sys-rssn" }
+sprs-rssn = { version = "0.11.0", path = "../../sprs-rssn" }

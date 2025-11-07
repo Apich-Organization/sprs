@@ -1,5 +1,5 @@
 [package]
-name = "sprs_suitesparse_umfpack"
+name = "sprs_suitesparse_umfpack-rssn"
 description = "sprs bindings to the suitesparse umfpack solver"
 version = "0.1.0"
 authors = ["James Logan <jlogan03@gmail.com>"]
@@ -11,5 +11,5 @@ license.workspace = true
 rust-version.workspace = true
 
 [dependencies]
-suitesparse_umfpack_sys = { version = "0.1.0", path = "../suitesparse_umfpack_sys" }
-sprs = { version = "0.11.0", path = "../../sprs" }
+suitesparse_umfpack_sys-rssn = { version = "0.1.0", path = "../suitesparse_umfpack_sys-rssn" }
+sprs-rssn = { version = "0.11.0", path = "../../sprs-rssn" }

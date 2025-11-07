@@ -1,17 +1,17 @@
 [workspace]
 members = [
-    "sprs",
-    "sprs-ldl",
-    "suitesparse_bindings/suitesparse_ldl_sys",
-    "suitesparse_bindings/sprs_suitesparse_ldl",
-    "suitesparse_bindings/suitesparse_camd_sys",
-    "suitesparse_bindings/sprs_suitesparse_camd",
-    "suitesparse_bindings/suitesparse-src",
-    "suitesparse_bindings/suitesparse_umfpack_sys",
-    "suitesparse_bindings/sprs_suitesparse_umfpack",
-    "sprs-rand",
-    "sprs-benches",
-    "sprs-tests",
+    "sprs-rssn",
+    "sprs-ldl-rssn",
+    "suitesparse_bindings/suitesparse_ldl_sys-rssn",
+    "suitesparse_bindings/sprs_suitesparse_ldl-rssn",
+    "suitesparse_bindings/suitesparse_camd_sys-rssn",
+    "suitesparse_bindings/sprs_suitesparse_camd-rssn",
+    "suitesparse_bindings/suitesparse-src-rssn",
+    "suitesparse_bindings/suitesparse_umfpack_sys-rssn",
+    "suitesparse_bindings/sprs_suitesparse_umfpack-rssn",
+    "sprs-rand-rssn",
+    "sprs-benches-rssn",
+    "sprs-tests-rssn",
 ]
 resolver = "2"
 

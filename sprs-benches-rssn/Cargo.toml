@@ -1,5 +1,5 @@
 [package]
-name = "sprs-benches"
+name = "sprs-benches-rssn"
 version = "0.1.0"
 authors = ["Vincent Barrielle <vincent.barrielle@m4x.org>"]
 publish = false
@@ -7,8 +7,8 @@ rust-version.workspace = true
 edition.workspace = true
 
 [dependencies]
-sprs = { version = "0.11.0", path = "../sprs" }
-sprs-rand = { version = "0.4.0", path = "../sprs-rand" }
+sprs-rssn = { version = "0.11.0", path = "../sprs-rssn" }
+sprs-rand-rssn = { version = "0.4.0", path = "../sprs-rand-rssn" }
 plotters = "0.3.4"
 pyo3 = { version = "0.27.0", features = ["auto-initialize"] }
 

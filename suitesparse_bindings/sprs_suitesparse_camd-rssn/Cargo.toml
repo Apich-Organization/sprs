@@ -1,5 +1,5 @@
 [package]
-name = "sprs_suitesparse_camd"
+name = "sprs_suitesparse_camd-rssn"
 description = "sprs bindings to the suitesparse camd fill-in reducting ordering"
 version = "0.3.0"
 authors = ["Vincent Barrielle <vincent.barrielle@m4x.org>"]
@@ -9,5 +9,5 @@ rust-version.workspace = true
 edition.workspace = true
 
 [dependencies]
-sprs = { version = "0.11.0", path = "../../sprs" }
-suitesparse_camd_sys = { version = "0.1.1", path = "../suitesparse_camd_sys/" }
+sprs-rssn = { version = "0.11.0", path = "../../sprs-rssn" }
+suitesparse_camd_sys-rssn = { version = "0.1.1", path = "../suitesparse_camd_sys-rssn/" }
