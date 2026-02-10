@@ -2,6 +2,7 @@
 
 use crate::rand::distr::Distribution;
 use crate::rand::Rng;
+use crate::rand::RngExt;
 use crate::rand::SeedableRng;
 use sprs::indexing::SpIndex;
 use sprs::{CsMat, CsMatI};
