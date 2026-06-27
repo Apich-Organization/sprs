@@ -10,18 +10,23 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
+    - name: Harden the runner (Audit all outbound calls)
+      uses: step-security/harden-runner@9af89fc71515a100421586dfdb3dc9c984fbf411 # v2.19.4
+      with:
+        egress-policy: audit
+
     - name: Checkout repository
-      uses: actions/checkout@v6
+      uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
 
     - name: Install rust
-      uses: actions-rs/toolchain@v1
+      uses: step-security/actions-rs-toolchain@40a2f87e50bed6faa2d050e99810b226b75d8c8a # v1.0.7
       with:
         toolchain: stable
         profile: minimal
         override: true
 
     - name: Install tarpaulin
-      uses: actions-rs/install@v0.1
+      uses: actions-rs/install@9da1d2adcfe5e7c16992e8242ca33a56b6d9b101 # v0.1.2
       with:
         crate: cargo-tarpaulin
         version: latest
@@ -31,6 +36,6 @@ jobs:
       run: cargo tarpaulin --verbose --out Xml --ignore-tests --packages sprs --all-features
 
     - name: Upload to codecov
-      uses: codecov/codecov-action@v5
+      uses: codecov/codecov-action@0fb7174895f61a3b6b78fc075e0cd60383518dac # v5.5.5
       with:
           token: ${{ secrets.CODECOV_TOKEN }}
